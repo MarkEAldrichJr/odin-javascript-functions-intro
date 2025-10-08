@@ -17,7 +17,13 @@
         return num1 * num2;
     }
 
-    
+    function capitalize(string){
+        var firstLetter = string[0].toUpperCase();
+        var theRest = string.slice(-string.length + 1).toLowerCase();
+        return firstLetter + theRest;
+    }
+
+    console.log(capitalize("helloWORLD"));
 
     console.log(add7(5));
   </script>
